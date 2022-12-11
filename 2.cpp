@@ -21,9 +21,7 @@ int main(void) {
 	cout << "Enter array elements: ";
 	for (int i = 0; i < array_size; i++) cin >> arr[i];
     
-    cout << IndexMaxElements(arr, array_size) - 1;
-    
-	for (int i = 0; i < IndexMaxElements(arr, array_size) - 1; i++) if (arr[i] < 0) arr[i] = 0;
+	for (int i = 0; i < IndexMaxElements(arr, array_size); i++) if (arr[i] < 0) arr[i] = 0;
 
 
 	for (int i = 0; i < array_size; i++) {
